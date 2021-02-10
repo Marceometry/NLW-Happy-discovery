@@ -1,0 +1,113 @@
+#page-orphanages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+aside {
+    background: linear-gradient(300deg, #15b6d6 0%, #15d6d6 100%);
+    width: clamp(17rem, 25vw, 44rem);
+    padding: clamp(3rem, 5vw, 8rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside h2 {
+    margin-top: 6.6rem;
+    font: bold clamp(2rem, 4.6vw, 3.9rem)/1.1 'Nunito', sans-serif;
+}
+
+aside p {
+    margin-top: 2.4rem;
+    font: 400 1.6rem/1.5 'Nunito', sans-serif;
+}
+
+aside footer p {
+    margin-top: .8rem;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    z-index: 0;
+}
+
+a.create-orphanage {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #15c3d6;
+
+    border: 0;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 100ms;
+}
+
+a.create-orphanage:hover {
+    background: #17d6eb;
+}
+
+.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive {
+    box-shadow: 0 0 40px 10px rgba(50, 168, 192, 0.16);
+    background: rgba(47, 166, 190, 0.09);
+}
+
+.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive:hover {
+    box-shadow: 0 0 40px 5px rgba(42, 178, 206, 0.3);
+    background: rgba(50, 177, 202, 0.13);
+}
+
+.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive:active {
+    box-shadow: 0 0 40px 5px rgba(31, 158, 184, 0.3);
+    background: rgba(30, 155, 180, 0.13);
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    opacity: .9;
+    border-radius: 2px;
+}
+
+.leaflet-popup-content {
+    color: #0089a5;
+    font: 700 2rem/1 'Nunito', sans-serif;
+    margin: .8rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content a {
+    width: 4rem;
+    height: 4rem;
+    background: #15c3d6;
+    border-radius: 1rem;
+    box-shadow: 17px 27px 41px rgba(23, 142, 166, 0.16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 200ms;
+}
+
+.leaflet-popup-content a:hover {
+    background: #17d6eb;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
